@@ -1,1 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HigherSecondary.org — Shikarpur Schools Directory</title>
+  <meta name="description" content="Informational directory for government schools in Shikarpur City and nearby districts including Sultan Kot and Garhi Yasin." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo"></div>
+        <div>HigherSecondary.org</div>
+      </a>
+      <div class="nav-links">
+        <a href="schools.html">Schools</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
 
+  <div class="container hero">
+    <div class="hero-grid">
+      <div class="card">
+        <h1 class="h1">Government Schools Directory for Shikarpur</h1>
+        <p class="p">
+          A simple, searchable directory covering <b>Shikarpur City</b> and districts like
+          <b>Sultan Kot</b> and <b>Garhi Yasin</b>.
+        </p>
+
+        <div class="badges">
+          <div class="badge">Search + filters</div>
+          <div class="badge">Easy to update</div>
+          <div class="badge">Mobile friendly</div>
+          <div class="badge">Contact: info@highersecondary.org</div>
+        </div>
+
+        <div class="btns">
+          <a class="btn primary" href="schools.html">Browse schools</a>
+          <a class="btn" href="contact.html">Contact</a>
+        </div>
+
+        <div class="hr"></div>
+        <div class="notice">
+          <b>Notice:</b> This site is an informational directory and is <b>not an official government website</b> unless authorized.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-title">Coverage</div>
+        <div class="grid-3">
+          <div class="kv">
+            <b>Shikarpur</b>
+            <span>City schools</span>
+          </div>
+          <div class="kv">
+            <b>Sultan Kot</b>
+            <span>District schools</span>
+          </div>
+          <div class="kv">
+            <b>Garhi Yasin</b>
+            <span>District schools</span>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <div class="small">
+          Want official listings? Add/verify entries inside <code>assets/schools-data.js</code>.
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      © <span id="y"></span> HigherSecondary.org • Contact: <a href="mailto:info@highersecondary.org">info@highersecondary.org</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
