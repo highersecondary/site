@@ -1,1 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Schools — HigherSecondary.org</title>
+  <meta name="description" content="Search and filter government schools in Shikarpur City, Sultan Kot, Garhi Yasin, and nearby areas." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="schools">
+  <div class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo"></div>
+        <div>HigherSecondary.org</div>
+      </a>
+      <div class="nav-links">
+        <a href="schools.html">Schools</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
 
+  <div class="container">
+    <div class="card" style="margin-top:18px;">
+      <h1 style="margin:0 0 8px;">Schools Directory</h1>
+      <p class="p" style="margin:0;">
+        Search and filter schools by area, level, and coverage type.
+      </p>
+      <div class="hr"></div>
+
+      <div class="form-row">
+        <input id="search" class="input" placeholder="Search by school name, area, or address..." />
+        <select id="area" aria-label="Area"></select>
+        <select id="level" aria-label="Level"></select>
+      </div>
+
+      <div style="height:12px;"></div>
+
+      <div class="form-row" style="grid-template-columns: .8fr 1.2fr 1fr;">
+        <select id="areaType" aria-label="Area type"></select>
+        <div class="notice">
+          Edit school data in <code>assets/schools-data.js</code>
+        </div>
+        <div class="small" style="text-align:right;">
+          <b id="count">0 school(s) found</b>
+        </div>
+      </div>
+    </div>
+
+    <div style="height:14px;"></div>
+
+    <div id="schoolList" class="school-list"></div>
+
+    <div class="footer">
+      Contact: <a href="mailto:info@highersecondary.org">info@highersecondary.org</a>
+    </div>
+  </div>
+
+  <script src="assets/schools-data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
